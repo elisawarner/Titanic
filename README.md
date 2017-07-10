@@ -4,6 +4,7 @@
 * **Bar_Charts.py :** Creates bar charts for two columns where col2 is 2 categories (e.g. Any_category vs Survival)
 * **Bar_Charts_col2_3cats.py :** Creates bar charts for two columns where col2 is 3 categories (e.g. Any_category vs PClass)
 * **Check_Dist.py :** Creates a histogram for continuous variables and calculates Kolmogorov-Smirnov p-value for normality
+* **Check_Dist_Advanced.py :** Creates a histogram, and calculates KS-test for every distribution. Can give you a "best match" if data fits no known distribution
 * **Convert_Cols_to_Probs.py :** for probability-based analysis. Converts all vars into probability-based values
 * **Run_Logistic.py :** use to run logistic analysis and test logistic reg against test set
 * **sample_dist.txt :** use with Check_Dist.py
@@ -33,3 +34,17 @@ e.g. Column 1: PClass, Column 2: Survived -- gives Chart of Frequency of passeng
 * Change dataset file on line 18 in quotes if dataset is not named 'train.csv'
 * Change column name on line 33 to indicate the continuous variable column you want to use
 * Make sure to download sample_dist.txt too (housefly wing data)
+
+### Check_Dist_Advanced.py
+#### _What should it be used with_:
+* _See Check_Dist.py_
+#### _What it does:_
+1. _See Check_Dist.py_
+2. Also displays KS results for gumbel left and right skewed distributions and uniform distribution
+3. If data does not match those distributions, gives user the choice to check all possible distributions
+4. If none of the known distributions match with the KS test, offers user the chance to see "best-matched" distribution based on p-values of KS test
+5. Allows user to see which tests could not be run without more information
+
+### _How to use this file_:
+* _See Check_Dist.py_
+* Answer 'y' or 'n' in the terminal when prompted

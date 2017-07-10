@@ -33,7 +33,7 @@ for val in file:
 
 
 ############### CHANGE THIS BOX ####################
-colname = 'Fare'
+colname = 'Age'
 ####################################################
 
 h = sorted([x for x in trainset[colname] if np.isnan(x) == False])
@@ -135,14 +135,14 @@ if all(x < 0.05 for x in pvalues):
 #		possible_dists = [] ### FOR TESTING: DISREGARD ###
 		if possible_dists == []:
 			print "No distributions found."
-			response_closest_answer = raw_input("Would you like to see the closest distribution? y/n: ")
+			response_closest_answer = raw_input("\nWould you like to see the closest distribution? y/n: ")
 			if response_closest_answer == 'y' or response_closest_answer == 'Y':
 				highest_key = test_results.keys()[0]
 				for key in test_results:
 					if test_results[key] > test_results[highest_key]:
 						highest_key = key
 				if test_results[highest_key] != 0.0:
-					print "BEST RESULT:",highest_key
+					print "\nBEST RESULT:",highest_key
 				else:
 					print "No results found"
 				print "\n\nAll results:",test_results
@@ -150,7 +150,7 @@ if all(x < 0.05 for x in pvalues):
 			print "Possible Distributions:\n",', '.join(possible_dists)
 
 ###### GIVES UNTESTED DISTRIBUTIONS: those that threw an error, need more arguments ######
-		view_answer = raw_input("View untested distributions? y/n: ")
+		view_answer = raw_input("\nView untested distributions? y/n: ")
 		if view_answer == 'y' or answer == 'Y':
 			print view_answer
 			print missing_dists

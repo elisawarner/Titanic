@@ -32,3 +32,4 @@ e.g. Column 1: PClass, Column 2: Survived -- gives Chart of Frequency of passeng
 #### _How to use this file_:
 * Change dataset file on line 18 in quotes if dataset is not named 'train.csv'
 * Change column name on line 33 to indicate the continuous variable column you want to use
+* Make sure to download sample_dist.txt too (housefly wing data)

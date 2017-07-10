@@ -9,10 +9,17 @@
 * **sample_dist.txt :** use with Check_Dist.py
 
 ### Bar_Charts.py
+#### _What should it be used with_:
+* Any dataframe that has discrete categorical variable columns (ideally Titanic data)
+#### _What it does:_
+1. Displays a labeled bar chart of column 1 separated by categories of column 2
+e.g. Column 1: PClass, Column 2: Survived -- gives Chart of Frequency of passengers by class, with bars for those who survived and those who died
 #### _How to use this file_:
 * Change lines 27 and 29 to change the columns you want to use
 **Remember that col2 on line 29 has to be a binary variable like 'Survived'. There can only be 2 categories**
 * Change the labels of column 1 in live 31 (**xlabels**). Each label should be a category within the variable listed as strings separated by commas
+* Change dataset file on line 19 in quotes if dataset is not named 'train.csv'
+* Change the category labels of column 2 on lines 77 and 79
 
 ### Bar_Charts_col2_3cats.py
 ### Check_Dist.py
